@@ -4,78 +4,215 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>DrivenEats</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="reset.css" />
   </head>
-
   <body>
     <header>
       <div class="titulos">
         <div class="menu-superior-titulo">DrivenEats</div>
-        <div class="menu-superior-subtitulo">
+        <div class="menu-superior-sub-titulo">
           Sua comida pronta em 6 minutos
         </div>
       </div>
     </header>
     <main>
       <div class="itens-group">
-        <div class="selection-itens">Primeiro, seu prato</div>
-        <div class="itens-rolagem">
-          <div class="item-selection" onclick="">
+        <div class="titulo-item-selecionado">Primeiro, seu prato</div>
+        <div class="itens-rolagem pratos">
+          <div class="item-selecionado" onclick="">
+            <img src="/images/empada.jpg" alt="melhor salgado" />
+            <div class="name">Empada</div>
+            <div class="descricao-item">Cremosa e bem recheada</div>
+            <div class="valor">R$ 2,50</div>
+            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+          </div>
+          <div class="item-selecionado" onclick="">
+            <img src="/images/cupim.jpg" alt="cupim" />
+            <div class="name">Cupim</div>
+            <div class="descricao-item">
+              Se não cortar com a colher, devolvemos seu dinheiro
+            </div>
+            <div class="valor">R$ 22,90</div>
+            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+          </div>
+          <div class="item-selecionado" onclick="">
+            <img src="/images/sushi.jpg" alt="peixe cru" />
+            <div class="name">Sushi</div>
+            <div class="descricao-item">
+              Peixes criados em nossos reservatorios
+            </div>
+            <div class="valor">R$ 25,70</div>
+            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+          </div>
+          <div class="item-selecionado" onclick="">
+            <img src="/images/Feijoada.jpg" alt="melhor comida, apenas" />
+            <div class="name">Feijoada</div>
+            <div class="descricao-item">Completa! Carnes e especiarias</div>
+            <div class="valor">R$ 20,75</div>
+            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+          </div>
+          <div class="item-selecionado" onclick="">
+            <img src="/images/Torresmo-sequinho.jpg" alt="torresmin" />
+            <div class="name">Torresmo</div>
+            <div class="descricao-item">
+              Sequinho e Crocante! Feito no alho e sal!
+            </div>
+            <div class="valor">R$ 13,90</div>
+            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+          </div>
+          <div class="item-selecionado" onclick="">
             <img
-              src="images/file_mignon_fritas-510x400.jpg"
-              alt="filezin com batata"
+              src="/images/file_mignon_fritas-510x400.jpg"
+              alt="Churrasquin"
             />
-            <div class="nome">Filé com Batata Frita</div>
+            <div class="name">Filé com Batata Frita</div>
             <div class="descricao-item">
-              Filé mignon com batata frita e salada
+              Fatias de Filé Mignon com batatas fritas
             </div>
-            <div class="valor-item">R$ 22,90</div>
+            <div class="valor">R$ 23,90</div>
             <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
           </div>
-          <div class="item-selection" onclick="">
-            <img src="images/espaguete-carbonara1.jpg" alt="macarraozin" />
-            <div class="nome">Carbonara</div>
-            <div class="descricao-item">Macarrão com bacon e especiarias</div>
-            <div class="valor-item">R$ 20,50</div>
+        </div>
+      </div>
+      <div class="itens-group">
+        <div class="titulo-item-selecionado">Agora, sua bebida</div>
+        <div class="itens-rolagem bebidas">
+          <div class="item-selecionado" onclick="">
+            <img
+              src="/images/novo-comercial-pepsi-twist-novas.jpg"
+              alt="melhor que coca"
+            />
+            <div class="name">Pepsi Twist</div>
+            <div class="descricao-item">Refigerante de 350ml</div>
+            <div class="valor">R$ 5,00</div>
             <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
           </div>
-          <div class="item-selection" onclick="">
-            <img src="images/empada.jpg" alt="melhor salgado" />
-            <div class="nome">Empada</div>
-            <div class="descricao-item">Empada com variedade de sabores</div>
-            <div class="valor-item">R$ 2,50</div>
+          <div class="item-selecionado" onclick="">
+            <img src="/images/pack-completo.jpg" alt="um dos melhores" />
+            <div class="name">Cajuína</div>
+            <div class="descricao-item">Refigerante de 2L</div>
+            <div class="valor">R$ 7,00</div>
             <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
           </div>
-          <div class="item-selection" onclick="">
-            <img src="images/Torresmo-sequinho.jpg" alt="torresmin" />
-            <div class="nome">Torresmo</div>
-            <div class="descricao-item">
-              Sequinho, crocante, feito no alho e sal
-            </div>
-            <div class="valor-item">R$ 8,50</div>
+          <div class="item-selecionado" onclick="">
+            <img src="/images/laranja.jpg" alt="Elite dos sucos" />
+            <div class="name">Suco de Laranja</div>
+            <div class="descricao-item">Suco da fruta, 400ml</div>
+            <div class="valor">R$ 6,00</div>
             <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
           </div>
-          <div class="item-selection" onclick="">
-            <img src="images/sushi.jpg" alt="peixe-cru" />
-            <div class="nome">Sushi</div>
-            <div class="descricao-item">Porção de sushi</div>
-            <div class="valor-item">R$ 25,00</div>
+          <div class="item-selecionado" onclick="">
+            <img src="/images/abacaxi.jpg" alt="é bom" />
+            <div class="name">Suco de Abacaxi com Hortelã</div>
+            <div class="descricao-item">Suco da fruta, 400ml</div>
+            <div class="valor">R$ 6,00</div>
             <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
           </div>
-          <div class="item-selection" onclick="">
-            <img src="images/Feijoada.jpg" alt="elite!" />
-            <div class="nome">Feijoada</div>
-            <div class="descricao-item">
-              Carnes e legumes e porção de salada
-            </div>
-            <div class="valor-item">R$ 20,50</div>
+          <div class="item-selecionado" onclick="">
+            <img
+              src="/images/abacate.jpg"
+              alt="a melhor vitamina da tua vida, parceiro "
+            />
+            <div class="name">Vitamina Abacate</div>
+            <div class="descricao-item">Vitamina de 300ml</div>
+            <div class="valor">R$ 8,90</div>
+            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+          </div>
+          <div class="item-selecionado" onclick="">
+            <img src="/images/milk.jpg" alt="bom também" />
+            <div class="name">Milk-shake</div>
+            <div class="descricao-item">Milk-shake de 300ml</div>
+            <div class="valor">R$ 9,20</div>
+            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <div class="itens-group">
+        <div class="titulo-item-selecionado">Por fim, sua sobremesa</div>
+        <div class="itens-rolagem sobremesas">
+          <div class="item-selecionado" onclick="">
+            <img src="/images/doceleite.jpg" alt="o da minha mãe é o melhor" />
+            <div class="name">Doce de leite</div>
+            <div class="descricao-item">Caseiro da casa!</div>
+            <div class="valor">R$ 2,50</div>
+            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+          </div>
+          <div class="item-selecionado" onclick="">
+            <img src="/images/sorvete-baunilha.jpg" alt="melhor sorvete" />
+            <div class="name">Sorvete de Baunilha</div>
+            <div class="descricao-item">Exageradamente Cremoso</div>
+            <div class="valor">R$ 5,50</div>
+            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+          </div>
+          <div class="item-selecionado" onclick="">
+            <img src="/images/pudim.jpg" alt="pudim" />
+            <div class="name">Pudim</div>
+            <div class="descricao-item">Molim, molim</div>
+            <div class="valor">R$ 4,20</div>
+            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+          </div>
+          <div class="item-selecionado" onclick="">
+            <img src="/images/pave.jpg" alt="que piada ruim" />
+            <div class="name">Pavê</div>
+            <div class="descricao-item">Esse não é só para "vê"</div>
+            <div class="valor">R$ 7,50</div>
+            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+          </div>
+          <div class="item-selecionado" onclick="">
+            <img src="/images/oreo.jpg" alt="Deu até vontade" />
+            <div class="name">Sobremesa de Oreo</div>
+            <div class="descricao-item">Além de bonito, é gostoso!</div>
+            <div class="valor">R$ 9,90</div>
+            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
+          </div>
+          <div class="item-selecionado" onclick="">
+            <img src="/images/torta.jpg" alt="torta de limão" />
+            <div class="name">Torta de Limão</div>
+            <div class="descricao-item">Exolosão de sabores</div>
+            <div class="valor">R$ 4,75</div>
             <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
           </div>
         </div>
       </div>
     </main>
+    <footer>
+      <div class="menu-inferior">
+        <div class="bar-selection">
+          <p>Selecionar os 3 itens</p>
+          <p>para fechar o pedido</p>
+        </div>
+      </div>
+      <div class="finalizar escondido">
+        <div class="bar-selection" onclick="">
+          <p>Fechar pedido</p>
+        </div>
+      </div>
+    </footer>
+    <div class="tela-de-confirmacao nenhuma-selecao">
+      <div class="dados-do-pedido">
+        <h4 class="titulo-confirmacao">Confirme seu pedido</h4>
+        <ul class="itens-confirmacao"></ul>
+        <div class="botoes">
+          <div class="botao-confirmacao confirmar" onclick="">
+            Tudo certo, pode pedir!
+          </div>
+          <div class="botao-confirmacao cancelar" onclick="">Cancelar</div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   </body>
 </html>
